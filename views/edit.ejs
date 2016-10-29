@@ -1,0 +1,15 @@
+<% include _header %>
+
+<div class="container">
+    <div class="wraper">
+        <h1>Edit your profile</h1>
+
+        <form action="/edit" method="post">
+            <input name="displayname" type="text" class="form-control" placeholder="Display name" value="<%= currentUser.name() %>">
+            <input type="submit" value="Update" class="btn btn-primary btn-block">
+        </form>
+    </div>
+</div>
+
+
+<% include _footer %>

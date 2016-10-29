@@ -1,0 +1,18 @@
+<% include _header %>
+
+<div class="wraper2">
+    <h1>Sign up</h1>
+
+    <form action="/signup" method="post" enctype="multipart/form-data">
+        <input name="username" type="text" class="form-control" placeholder="Username" required autofocus>
+        <br>
+        <input name="password" type="password" class="form-control" placeholder="Password" required>
+        <br>
+        <input type="file" name="avatar" required>
+        <br>
+        <input type="submit" value="Sign up" class="btn btn-primary btn-block">
+    </form>
+</div>
+
+
+<% include _footer %>

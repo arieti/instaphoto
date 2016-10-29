@@ -1,0 +1,95 @@
+.navbar{
+    margin-bottom: 10px;
+}
+
+section{
+    padding: 30px 0;
+}
+
+.section-gray{
+    background: #f4f4f4;
+}
+
+.img-html img{
+    padding-left: 50px;
+}
+
+.jumbotron{
+    margin: 0 !important;
+    min-height: 350px;
+    background: #f4f4f4;
+    width: 100%;
+}
+
+h1,h2,h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron h1{
+    font-size: 55px;
+}
+
+.img{
+    width: 99%;
+    height:200px;
+    margin-bottom: 4px;
+}
+
+.full-width{
+    padding: 0;
+}
+
+.heading{
+    padding-left: 0;
+    border-bottom: 1px solid #777;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.wraper1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wraper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.wraper2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc{
+    width: 100%;
+}
+
+.avatar{
+    height: 40px;
+}
+
+
+
+@media(max-width: 990px){
+    .img-html img{
+        padding-top: 20px;
+        padding-left: 200px;
+    }
+
+}
+
+@media(max-width: 768px){
+    .jumbotron img{
+        display: none;
+    }
+
+    .avatar{
+        height: 80px;
+    }
+
+}
+
