@@ -72,6 +72,22 @@ h1,h2,h3{
     height: 40px;
 }
 
+.single{
+    position: relative;
+    display: inline;
+}
+
+.likenumber{
+    display: inline;
+    float: right;
+}
+
+.likes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 
 
 @media(max-width: 990px){

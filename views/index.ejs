@@ -5,9 +5,15 @@
     <div class="container">
         <h3 class="heading">My photos</h3>
         <div class="wraper1">
-            <% photos.forEach(function(photo) { %>
-                <a href="#"><img class="img" src="<%= photo.image %>" alt=""></a>
-            <% }); %>
+                <% photos.forEach(function(photo) { %>
+                <div class="single">
+                    <a href="#"><img class="img" src="<%= photo.image %>" alt=""></a>
+                    <div class="likes">
+                        <iframe src="//instalike.click/button/?thing=<%= photo.image %>" frameborder="0" scrolling="0" width="140px" height="20px">
+                        </iframe>
+                    </div>
+                </div>
+                <% }); %>
         </div>
     </div>
 </section>
@@ -17,7 +23,13 @@
         <h3 class="heading">Other photos</h3>
         <div class="wraper1">
             <% otherPhotos.forEach(function(otherPhoto) { %>
-            <a href="#"><img class="img" src="<%= otherPhoto.image %>" alt=""></a>
+            <div class="single">
+                <a href="#"><img class="img" src="<%= otherPhoto.image %>" alt=""></a>
+                <div class="likes">
+                    <iframe src="//instalike.click/button/?thing=<%= otherPhoto.image %>&align=left" frameborder="0" scrolling="0" width="140px" height="20px">
+                    </iframe>
+                </div>
+            </div>
             <% }); %>
         </div>
     </div>
@@ -45,9 +57,9 @@
             <div class="col-md-7">
                 <div class="animated fadeInLeft">
                     <h1>Best file-sharing website</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec nisl vitae nibh euismod pharetra.
-                        Vivamus risus tortor, aliquam ac lectus quis, tristique vestibulum velit.</p>
-                    <a class="btn btn-primary btn-lg" href="#">Find Out More</a>
+                    <p>Jelly beans marshmallow chocolate cake marzipan marzipan. Jujubes halvah cupcake brownie donut.
+                        Carrot cake cupcake chocolate bonbon dessert cake sesame snaps cake wafer. </p>
+                    <a class="btn btn-primary btn-sm" href="#">Find Out More</a>
                 </div>
             </div>
             <div class="col-md-5 img-html">
